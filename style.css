@@ -1,0 +1,94 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+
+body {
+  background: linear-gradient(160deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  color: #0f172a;
+}
+
+.app { max-width: 700px; margin: 0 auto; padding: 1.5rem; }
+
+.app-header { text-align: center; margin-bottom: 1.5rem; color: #fff; }
+.app-header h1 { margin-bottom: 1rem; text-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+
+.search-form { display: flex; gap: 0.5rem; justify-content: center; }
+.search-form input {
+  flex: 1;
+  max-width: 320px;
+  padding: 0.65rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.search-form button {
+  padding: 0.65rem 1.1rem;
+  border: none;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.search-form button:hover { opacity: 0.9; }
+
+.content { display: flex; flex-direction: column; gap: 1.2rem; }
+
+.hint { text-align: center; color: #fff; opacity: 0.9; }
+
+.error-box {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.current-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.current-card h2 { font-size: 1.4rem; margin-bottom: 0.2rem; }
+.current-card .country { color: #64748b; font-size: 0.9rem; margin-bottom: 0.8rem; }
+.current-temp { font-size: 3rem; font-weight: 700; }
+.current-desc { text-transform: capitalize; color: #334155; margin-bottom: 0.8rem; }
+
+.current-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.detail-item { background: #f1f5f9; border-radius: 8px; padding: 0.6rem; }
+.detail-item .label { font-size: 0.75rem; color: #64748b; }
+.detail-item .value { font-size: 1rem; font-weight: 600; }
+
+.forecast-section h3 { color: #fff; margin-bottom: 0.6rem; }
+
+.forecast-scroll {
+  display: flex;
+  gap: 0.8rem;
+  overflow-x: auto;
+  padding-bottom: 0.4rem;
+}
+
+.forecast-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 0.9rem;
+  min-width: 110px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.forecast-card .day { font-weight: 600; font-size: 0.85rem; }
+.forecast-card .time { font-size: 0.7rem; color: #64748b; }
+.forecast-card .temp { font-size: 1.1rem; font-weight: 700; margin: 0.3rem 0; }
+.forecast-card .desc { font-size: 0.7rem; color: #475569; text-transform: capitalize; }
+
+@media (max-width: 480px) {
+  .current-details { grid-template-columns: repeat(2, 1fr); }
+}

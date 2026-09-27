@@ -1,0 +1,21 @@
+{
+  "name": "weather-forecast-app",
+  "version": "1.0.0",
+  "description": "A weather forecast web app (current weather + 5-day forecast) built with Node.js, Express and vanilla JS, using the OpenWeatherMap API.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "keywords": ["weather", "forecast", "express", "openweathermap", "internship", "codtech"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "axios": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

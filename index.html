@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Weather Forecast App</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>🌤️ Weather Forecast</h1>
+      <form id="search-form" class="search-form">
+        <input type="text" id="city-input" placeholder="Search city (e.g. Mumbai, London)" required />
+        <button type="submit">Search</button>
+        <button type="button" id="locate-btn" title="Use my location">📍</button>
+      </form>
+    </header>
+
+    <main id="content" class="content">
+      <p class="hint">Search a city or tap 📍 to use your current location.</p>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
